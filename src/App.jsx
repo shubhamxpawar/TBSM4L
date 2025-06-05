@@ -33,7 +33,6 @@ function App() {
         <Route path='/Lunchbreak' element={<Lunchbreak />}></Route>
         <Route path='/Kshama' element={<Kshama />}></Route>
         <Route path='/Dl91' element={<Dl91 />}></Route>
-        
       </Routes>
 
       <Footer />

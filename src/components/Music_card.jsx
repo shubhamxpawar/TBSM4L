@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Music_card = (props) => {
   return (
-    <div className='w-full my-1 mx-auto py-2 px-4 bg-slate-800 hover:bg-slate-700 h-16 flex justify-between text-white rounded-2xl select-none'>
+    <div className='w-full my-1 mx-auto py-2 px-4 bg-slate-800 hover:bg-slate-700/50 h-16 flex justify-between text-white rounded-2xl select-none backdrop-blur-xs'>
 
       <div name="song info" className='flex'>
         <p className='mr-4 cursor-pointer'>
