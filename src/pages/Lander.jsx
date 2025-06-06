@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Lander = () => {
   return (
-    <div className='h-screen w-full overflow-hidden z-0 md:bg-[url("/main-bg.jpg")] bg-[url(https://i.pinimg.com/736x/f3/f6/69/f3f669ac4445df8577681e6c597aaeb1.jpg)] bg-cover bg-center bg-no-repeat '>
+    <div className='h-screen w-full overflow-hidden absolute z-0 md:bg-[url("/main-bg.jpg")] bg-[url(https://i.pinimg.com/736x/f3/f6/69/f3f669ac4445df8577681e6c597aaeb1.jpg)] bg-cover bg-center bg-no-repeat '>
       <div className='h-screen w-full absolute z-0 inset-0 bg-gradient-to-t from-black via-black/80 to-transparent'></div>
       <div className='relative z-10 h-full text-white flex flex-col justify-end' > 
         <div className='russo-text mb-8 sm:mb-12 mx-8'>
