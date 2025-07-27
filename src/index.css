@@ -6,6 +6,22 @@ body{
     font-family: "Rowdies", sans-serif;
 }
 
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+.moving-gradient {
+  background: linear-gradient(135deg,#1e293b , #334155, #1e293b); 
+  background-size: 400% 400%;
+  animation: gradient-x 3s ease infinite;
+}
+
+
 *{
 	overflow-x: hidden;
 }

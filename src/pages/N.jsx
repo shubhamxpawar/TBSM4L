@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Music_card } from '../components/Music_card'
-import { getSongsByAlbum } from '../utils/FetchSongs'
+
 import { getCachedAlbum, setCachedAlbum } from '../utils/AlbumSongs'
 
 export const N = () => {
@@ -33,7 +33,7 @@ export const N = () => {
               songname={song.title} 
               artist={song.artists} 
               len={song.duration} 
-              url={song.url} className=""/>
+              url="https://scpsqyfmefnohijyjnjl.supabase.co/storage/v1/object/sign/albums/Nayaab/Seedhe%20Maut%20-%20Batti.mp3?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV80ZGExZWY2OS04MWIwLTQyMTgtOTlkMC05MDg0N2Y2MDllZjciLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJhbGJ1bXMvTmF5YWFiL1NlZWRoZSBNYXV0IC0gQmF0dGkubXAzIiwiaWF0IjoxNzUxMzAzMjIzLCJleHAiOjE3NTE5MDgwMjN9.1fl1pENrQ2KI-WCQpCnQfNkP7fsISWSxJ0IRahkFQk8" className=""/>
           )
         }
       </div>
