@@ -1,26 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import { Music_card } from '../components/Music_card'
-
-import { getCachedAlbum, setCachedAlbum } from '../utils/AlbumSongs'
+import songdata from '../SongData.json'
 
 export const Nayaab = () => {
 
   const [AllSongs, setAllSongs] = useState(null)
 
   useEffect(() => {
-    const loadSongs = async () => {
-      const cached = getCachedAlbum('Nayaab')
-      if (cached) {
-        setAllSongs(cached)
-        return
-      }
-
-      const fresh = await getSongsByAlbum('Nayaab')
-      setAllSongs(fresh)
-      setCachedAlbum('Nayaab', fresh)
-    }
-
-    loadSongs()
+    setAllSongs(songdata[3])
   }, [])
 
   return (

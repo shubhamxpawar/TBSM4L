@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { Music_card } from '../components/Music_card'
-
-import { getCachedAlbum, setCachedAlbum } from '../utils/AlbumSongs'
+import songdata from '../SongData.json'
 
 export const Kshama = () => {
 
@@ -9,15 +8,7 @@ export const Kshama = () => {
 
   useEffect(() => {
     const loadSongs = async () => {
-      const cached = getCachedAlbum('Kshama')
-      if (cached) {
-        setAllSongs(cached)
-        return
-      }
-
-      const fresh = await getSongsByAlbum('Kshama')
-      setAllSongs(fresh)
-      setCachedAlbum('Kshama', fresh)
+      setAllSongs(songdata[5])
     }
 
     loadSongs()
