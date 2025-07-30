@@ -4,7 +4,7 @@ import { Play, SkipForward, SkipBack, Volume2 } from 'lucide-react';
 
 export const Song_controls = () => {
     return (
-        <div className="min-w-4xl h-20 fixed bottom-16 left-1/2 transform -translate-x-1/2 bg-[#111] text-white px-6 py-4 rounded-full shadow-lg flex justify-between items-center gap-6 z-50">
+        <div className="min-w-4xl h-20 fixed bottom-12 left-1/2 transform -translate-x-1/2 bg-[#111] text-white px-6 py-4 rounded-full shadow-lg flex justify-between items-center gap-6 z-50">
 
             {/* song info */}
             <div className="w-38">
