@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import { Routes, Route, useNavigate} from 'react-router-dom'
+import { Routes, Route, useNavigate, useLocation} from 'react-router-dom'
 import './App.css'
 import { Navbar } from './components/Navbar'
 import { Footer } from './pages/Footer'
@@ -16,6 +16,8 @@ import { Dl91 } from './pages/Dl91'
 function App() {
 
   const navigate = useNavigate();
+  const location = useLocation()
+  const showControls = location.pathname !== '/'
 
   return (
     <>
@@ -35,7 +37,7 @@ function App() {
         <Route path='/Dl91' element={<Dl91 />}></Route>
       </Routes>
 
-      <Footer />
+      {showControls && <Footer />}
         
     </>
   )
