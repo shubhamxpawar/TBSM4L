@@ -7,7 +7,7 @@ export const Nayaab = () => {
   const [AllSongs, setAllSongs] = useState(null)
 
   useEffect(() => {
-    setAllSongs(songdata[3])
+    setAllSongs(songdata[2])
   }, [])
 
   return (

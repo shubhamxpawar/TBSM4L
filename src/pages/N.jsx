@@ -7,7 +7,7 @@ export const N = () => {
   const [AllSongs, setAllSongs] = useState(null)
 
   useEffect(() => {
-    setAllSongs(songdata[2])
+    setAllSongs(songdata[1])
   }, [])
 
   return (

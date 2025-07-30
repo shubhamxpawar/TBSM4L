@@ -8,7 +8,7 @@ export const Kshama = () => {
 
   useEffect(() => {
     const loadSongs = async () => {
-      setAllSongs(songdata[5])
+      setAllSongs(songdata[4])
     }
 
     loadSongs()
