@@ -20,7 +20,7 @@ export const Nayaab = () => {
               songname={song.title} 
               artist={song.artists} 
               len={song.duration} 
-              url={song.url} className=""/>
+              url={song.source} className=""/>
           )
         }
       </div>
